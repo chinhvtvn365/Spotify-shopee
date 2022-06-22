@@ -241,12 +241,25 @@ header .song_play .icon{
    color: #fff;
    margin: 0px 20px 0px 40px;
    outline: none;
+   display: flex;
+   align-items: center;
+}
+header .song_play .icon .active{
+    color: red !important;
 }
 header .song_play .icon .bi{
  cursor: pointer;
  outline: none;
 }
-header .song_play .icon .bi:nth-child(2){
+header .song_play .icon .shuffle{
+    font-size: 16px;
+    color: #fff;
+    width: 16px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+   }
+header .song_play .icon .bi:nth-child(3){
 border: 1px solid rgb(105, 105, 170,.1);
 border-radius: 50%;
 padding: 1px 4px 0px 6px;
