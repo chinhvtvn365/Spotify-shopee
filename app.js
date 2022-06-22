@@ -390,6 +390,10 @@ const app = {
       ].style.background = "rgb(105, 105, 170, .1)";
     });
     next.addEventListener("click", () => {
+      if(random_song.innerHTML === "random"){
+        random_music()
+      }
+      else {
       index -= 0;
       if(index >= songs.length){
         index = 0;
@@ -415,7 +419,7 @@ const app = {
         `${index - 1}`
       ].style.background = "rgb(105, 105, 170, .1)";
         
-    });
+    }});
 
     left_scroll.addEventListener("click", () => {
       pop_song.scrollLeft -= 330;
